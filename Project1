@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KFC</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #ff7539, #e02829);
+            color: #fff;
+            padding: 20px;
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        h1 {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        p {
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .discount-button {
+             padding: 15px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+            background-color:#ff7539;
+            color:#fff;
+            text-decoration: none;
+            transition: 200ms ease-in-out;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            cursor: pointer;
+            border-color: #fff;
+            border-bottom: #fff;
+            border-top: #fff;
+            border-left: #fff;
+            border-right: #fff;
+        }
+            
+        .discount-button:hover {
+            background-color: #e02829;
+            color: #fff;
+            cursor: pointer;
+            opacity: 0.9;
+        }
+        img {
+            
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 10px;
+        }
+        span {
+            text-align: center;
+            display: block;
+            align-items: center;
+        }
+        .footer {
+            text-align: center;
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Welcome to <em>KFC</em></h1>
+    <p><strong>The Finger Lickin' Good</strong> taste of our fried chicken!</p>
+    <img src=https://upload.wikimedia.org/wikipedia/en/thumb/5/57/KFC_logo-image.svg/800px-KFC_logo-image.svg.png alt="KFC Logo" style="width: 200px; height: auto;">
+    <p>
+        KFC (also commonly referred to by its historical name Kentucky Fried Chicken) is an American fast food restaurant chain headquartered in Louisville, Kentucky, that specializes in fried chicken.KFC is about enjoying Finger Lickin Good food. It’s about sharing moments with friends, family and total strangers. It’s about KFC Mini-Cricket, Add Hope, competitions and everything in between.
+    </p>
+    <a
+    href="https://en.wikipedia.org/wiki/KFC"
+    target="_blank"
+    class="Learn More"
+    >
+    Learn More on wikipedia
+    </a>
+    <hr>
+    <h2>Get a 10% discount on your next order!</h2>
+    <p>Enter your email to receive the discount code:</p>
+    <div>
+    <button onclick="getDiscount()" class="discount-button">Get Discount</button>
+    </div>
+    <br>
+    <p>Click on the button above to get the special discount.</p>
+    <span>Don't miss out on this great offer!</span>
+    <br>
+       <class="footer">
+        <p>Coded By Thotloetso Gopane</p>
+    <script>
+        function getDiscount() {
+            let email = prompt("Enter your email:");
+
+            if (email) {
+                alert("Congratulations! Check your email for the discount code.");
+            } else {
+                alert("Please enter a valid email to receive the discount.");
+            }
+        }
+       let getDiscountButton = document.querySelector(".getDiscount-button");
+    </script>
+</body>
+</html>
